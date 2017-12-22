@@ -5,6 +5,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -15,13 +16,14 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Output Management'
         }),
+        new UglifyJsPlugin(),
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
     ],
     devtool: "inline-source-map",
     devServer: {
         contentBase: './dist',
-        hot: true
+        hot: false
     },
     output: {
         filename: '[name].bundle.js',
