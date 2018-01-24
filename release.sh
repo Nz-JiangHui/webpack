@@ -1,3 +1,2 @@
 #!/bin/bash
-#!/usr/bin/env node
-git checkout master && git pull && node -v
+git checkout master && git pull
