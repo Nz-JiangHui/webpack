@@ -9,7 +9,8 @@
     "watch": "webpack --watch",
     "start": "npm run server",
     "server": "node ./build/dev-server.js",
-    "run": "forever start ./build/dev-server.js"
+    "run": "forever start ./build/dev-server.js",
+    "stop":"forever stop ./build/dev-server.js"
   },
   "author": "",
   "license": "ISC",
