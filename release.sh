@@ -2,4 +2,4 @@
 . ~/.nvm/nvm.sh
 . ~/.profile
 . ~/.bashrc
-git pull && git checkout master && git pull && nvm -v
+git pull && git checkout master && git pull && npm run run
