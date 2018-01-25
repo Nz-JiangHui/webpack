@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 . ~/.nvm/nvm.sh
-git pull && git checkout master && git pull && npm run run
+. ~/.profile
+. ~/.bashrc
+git pull && git checkout master && git pull && npm run runls
