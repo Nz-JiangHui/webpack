@@ -1,2 +1,2 @@
 #!/bin/sh
-git checkout master && git pull && npm run run
+git checkout master && git pull && nvm -v
