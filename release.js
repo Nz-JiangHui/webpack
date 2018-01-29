@@ -21,5 +21,5 @@ conn.on('ready', function() {
     host: '10.130.21.20',
     port: 22,
     username: 'jianghui',
-    password: 'jianghui'
+    privateKey : require('fs').readFileSync('D:/learn/Identity2')
 });
